@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show HTML</title>
+</head>
+<body>
+    <h1 align='center'>Show Student Record</h1>
+    <table border='3' align='center' width='50%'>
+        <tr>
+            <th>Name</th>
+            <th>{{stu.name}}</th>
+        </tr>
+        <tr>
+            <th>Age</th>
+            <th>{{stu.age}}</th>
+        </tr>
+        <tr>
+            <th>Mobile No</th>
+            <th>{{stu.mobileno}}</th>
+        </tr>
+        <tr>
+            <th>Date of Birth</th>
+            <th>{{stu.dob}}</th>
+        </tr>
+        <tr>
+            <th>Picture</th>
+            <th>
+                <img src="{{stu.pic.url}}" alt="{{stu.pic.url}}" height='200px'>
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

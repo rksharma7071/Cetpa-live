@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}All Courses{% endblock title %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+    <table class="table table-bordered my-3 text-center">
+        <tr>
+            <td class="bg-primary text-light h3" colspan="7">List of Payment</td>
+        </tr>
+        <tr>
+            <th style="width:25%">ID</th>
+            <th style="width:25%">Amount</th>
+            <th style="width:25%">Payment Mode</th>
+            <th style="width:25%">Payment Date</th>
+            {% comment %} <th>Students</th> {% endcomment %}
+        </tr>
+        {% for payment in payments %}
+        <tr>
+            <td>{{payment.id}}</td>
+            <td>{{payment.amount}}</td>
+            <td>{{payment.payment_mode}}</td>
+            <td>{{payment.payment_date}}</td>
+            {% comment %} <td>
+                <ul>
+                    {% for s in course.students.all %}
+                        <li>{{s}}</li>
+                    {% endfor %}
+                </ul>
+            </td> {% endcomment %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</div>
+</div>
+
+{% endblock main %}

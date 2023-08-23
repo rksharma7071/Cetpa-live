@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:8000/product/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Product</title>
+    <link href="./Product_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style type="text/css"></style>
+</head>
+<body>
+    <div class="container">
+        <div class="row bg-warning text-center py-2">
+            <h1>Product Categories</h1>
+        </div>
+        <div class="row p-3">
+            <div class="col col-6 m-auto border shadow rounded-3">
+                <form method="post" class="p-3" id="productForm ">
+                    <input type="hidden" name="csrfmiddlewaretoken" value="yFrwrTg5KAoJRF5LEb5gUKbQmseZcZ6oTU5CQDChIlhh6MbavEia7xESxzJNy3s0">
+                    <div class="form-group py-2">
+                        <label for="product_category" class="form-label">Select Product Category</label>     
+                        <select id="product_category" name="product_category" class="form-control" onchange="this.form.submit()">
+                            <option value="" disabled="" selected="">Select a category</option>
+                            
+                                <option value="1" onclick="">Electronics</option>
+                            
+                                <option value="2" onclick="">Fashion &amp; Apparel</option>
+                            
+                                <option value="3" onclick="">Home &amp; Furniture</option>
+                            
+                                <option value="4" onclick="">Beauty &amp; Personal Care</option>
+                            
+                                <option value="5" onclick="">Health &amp; Wellness</option>
+                            
+                                <option value="6" onclick="">Sports &amp; Outdoors</option>
+                            
+                                <option value="7" onclick="">Baby &amp; Kids</option>
+                            
+                                <option value="8" onclick="">Automotive &amp; Tools</option>
+                            
+                                <option value="9" onclick="">Books, Movies &amp; Music</option>
+                            
+                                <option value="11" onclick="">Grocery &amp; Food</option>
+                            
+                                <option value="12" onclick="">Pet Supplies</option>
+                            
+                                <option value="13" onclick="">Office &amp; School Supplies</option>
+                            
+                                <option value="14" onclick="">Art &amp; Craft Supplies</option>
+                            
+                                <option value="15" onclick="">Jewelry &amp; Watches</option>
+                            
+                                <option value="16" onclick="">Electronics Accessories</option>
+                            
+                                <option value="17" onclick="">Home Improvement</option>
+                            
+                                <option value="18" onclick="">Garden &amp; Outdoor</option>
+                            
+                                <option value="19" onclick="">Travel &amp; Luggage</option>
+                            
+                                <option value="20" onclick="">Gaming</option>
+                            
+                                <option value="21" onclick="">Specialty Foods &amp; Beverages</option>
+                            
+                        </select>
+                    </div>
+                    <div class="form-group py-2">
+                        <label for="sub_category" class="form-label">Select Sub-Category 1</label>
+                        <select id="sub_category" name="sub_category" class="form-control" onchange="this.form.submit()">
+                            <option value="" disabled="" selected="">Select a Sub category 1</option>
+                            
+                        </select>
+                    </div>
+                    
+                    
+                    <div class="form-group py-2">
+                        <input type="submit" name="Submit" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       
+    </script>
+    <script src="./Product_files/bootstrap.bundle.min.js.download" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body></html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        input, textarea {
+            border: 1px solid #ccc;
+            border-radius:5px;
+            padding: 5px;
+            transition: border-color 0.3s;
+        }
+        input:focus, textarea:focus {
+            border:2px solid #7df9ff;
+            outline: none;
+            position: relative;
+            box-shadow: 0 0px 10px #7df9ff;
+        }
+        .errorlist{
+            color:red;
+        }
+        .help_text{
+            color:green;
+        }
+    </style
+</head>
+<body bgcolor="yellow">
+<div class="container">
+        <div class="row">
+            <h1 align='center'>Welcome to LMS Login Page</h1>
+        </div>
+        <div class="row">
+            <div class="col col-md-8 m-auto">
+                <form action="" method="post" class="row g-3 needs-validation border rounded m-3 p-4" novalidate>
+                    {% csrf_token %}
+                    <table bgcolor='white' align='center'>
+                        {{form.username.label_tag}}
+                        {{form.username}}
+                        <div class="help_text">
+                            {{form.username.help_text}}
+                        </div>
+                        {{form.username.errors}}
+
+
+                        {{form.password.label_tag}}
+                        {{form.password}}
+                        <div class="help_text">
+                            {{form.password.help_text}}
+                        </div>
+                        {{form.password.errors}}
+                        <tr>
+                            <td>
+                                <input type="submit" value="Register">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+</div>
+    <a href="{% url 'home' %}">Back To Home</a>
+</body>
+</html>

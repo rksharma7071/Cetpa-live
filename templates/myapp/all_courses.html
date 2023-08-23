@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %}All Courses{% endblock title %}
+
+{% block main %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+
+    <table class="table table-bordered my-3 text-center">
+        <tr>
+            <td class="bg-primary text-light h3" colspan="7">List of Courses</td>
+        </tr>
+        <tr>
+            <th style="width:50%">ID</th>
+            <th style="width:50%">Name</th>
+            {% comment %} <th>Students</th> {% endcomment %}
+        </tr>
+        {% for course in courses %}
+        <tr>
+            <td>{{course.id}}</td>
+            <td>{{course.name}}</td>
+            {% comment %} <td>
+                <ul>
+                    {% for s in course.students.all %}
+                        <li>{{s}}</li>
+                    {% endfor %}
+                </ul>
+            </td> {% endcomment %}
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</div>
+</div>
+
+{% endblock main %}

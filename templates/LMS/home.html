@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body bgcolor="yellow" align='center'>
+    <h1>Welcome to LMS Home Page</h1>
+
+    <table bgcolor="white" border='2' align='center' width='50%'>
+        <tr>
+            <th>Home</th>
+            <th><a href="{% url 'home' %}">Home</a></th>
+        </tr>
+        <tr>
+            <th>Register</th>
+            <th><a href="{% url 'register' %}">Register</a></th>
+        </tr>
+        <tr>
+            <th>Login</th>
+            <th><a href="{% url 'login' %}">Login</a></th>
+        </tr>
+        <tr>
+            <th>Secure1</th>
+            <th><a href="{% url 'secure1' %}">Secure1</a></th>
+        </tr>
+        <tr>
+            <th>Secure2</th>
+            <th><a href="{% url 'secure2' %}">Secure2</a></th>
+        </tr>
+        <tr>
+            <th>Unsecure1</th>
+            <th><a href="{% url 'unsecure1' %}">Unsecure1</a></th>
+        </tr>
+        <tr>
+            <th>Unsecure2</th>
+            <th><a href="{% url 'unsecure2' %}">Unsecure2</a></th>
+        </tr>
+        <tr>
+            <th>Logout</th>
+            <th><a href="{% url 'logout' %}">Logout</a></th>
+        </tr>
+    </table>
+</body>
+</html>
